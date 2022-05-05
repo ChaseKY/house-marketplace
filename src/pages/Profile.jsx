@@ -49,7 +49,7 @@ function Profile() {
       querySnap.forEach((doc) => {
         return listings.push({
           id: doc.id,
-          data: doc.data,
+          data: doc.data(),
         });
       });
 
